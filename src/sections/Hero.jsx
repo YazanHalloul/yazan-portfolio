@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-soft flex items-center pt-[60px]"
+      className="min-h-screen bg-soft flex items-center"
     >
       {" "}
       <div className="max-w-6xl mx-auto px-6 w-full">
