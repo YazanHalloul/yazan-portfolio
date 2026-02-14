@@ -2,30 +2,41 @@ function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center items-center text-center px-6"
+      className="min-h-screen bg-soft flex items-center pt-[60px]"
     >
-      <h1 className="text-4xl md:text-6xl font-bold">
-        Hi, I'm Yazan Halloul
-      </h1>
+      {" "}
+      <div className="max-w-6xl mx-auto px-6 w-full">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+          {/* Text */}
+          <div className="text-center lg:text-left flex-1">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              Hi, I'm Yazan Halloul
+            </h1>
 
-      <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-2xl">
-        Frontend Developer building modern, responsive, and scalable web applications.
-      </p>
+            <p className="text-gray-500 mb-8 max-w-xl mx-auto lg:mx-0">
+              Software Engineer with a background in Artificial Intelligence, building scalable web, mobile, and intelligent systems.
+            </p>
 
-      <div className="mt-8 flex gap-4">
-        <a
-          href="#projects"
-          className="px-6 py-3 bg-green-500 text-black font-semibold rounded-full"
-        >
-          View Work
-        </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <button className="bg-secondary text-white px-6 py-3 rounded-full">
+                View Work
+              </button>
 
-        <a
-          href="#contact"
-          className="px-6 py-3 border border-green-500 text-green-500 rounded-full"
-        >
-          Contact Me
-        </a>
+              <button className="border border-secondary text-secondary px-6 py-3 rounded-full">
+                Contact Me
+              </button>
+            </div>
+          </div>
+
+          {/* Image */}
+          <div className="flex-1 flex justify-end">
+            <img
+              src="/profile.jpg"
+              alt="Yazan Halloul"
+              className="w-64 md:w-80 lg:w-96 object-cover rounded-3xl shadow-lg border-4 border-secondary"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
