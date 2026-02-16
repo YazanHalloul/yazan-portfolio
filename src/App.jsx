@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="bg-primary">
       <Navbar />
-      <div className="pt-[60px] md:pt-0">
+      <div className="pt-[60px] lg:pt-0">
         <Hero />
         <hr className="h-1 border-t-0 bg-transparent bg-gradient-to-r from-primary via-secondary to-primary" />
         <About />

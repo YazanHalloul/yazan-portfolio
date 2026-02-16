@@ -11,7 +11,7 @@ function Hero() {
     >
       <div className="flex flex-col items-center gap-10">
         <div className="max-w-6xl mx-auto px-6 w-full ">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
+          <div className="flex flex-col lg:flex-row items-center justify-between pt-8 gap-10">
             {/* Text */}
             <div className="text-center lg:text-left flex-1">
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-accent">
@@ -66,7 +66,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="text-[16px] max-w-6xl mx-auto px-6 py-8 w-full flex flex-row gap-4 justify-center lg:justify-start text-accent ">
+        <div className="text-[16px] max-w-6xl mx-auto px-6 pb-8 w-full flex flex-row gap-4 justify-center lg:justify-start text-accent ">
           {" "}
           <motion.button
             whileHover={{ scale: 1.05 }}
