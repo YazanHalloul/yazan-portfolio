@@ -1,7 +1,10 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
-import TechStack from "./sections/TachStack";
+import Projects from "./sections/Projects";
+import Skills from "./sections/Skills";
 
 function App() {
   return (
@@ -12,10 +15,13 @@ function App() {
         <hr className="h-1 border-t-0 bg-transparent bg-gradient-to-r from-primary via-secondary to-primary" />
         <About />
         <hr className="h-1 border-t-0 bg-transparent bg-gradient-to-r from-primary via-secondary to-primary" />
-        <TechStack />
+        <Skills />
         <hr className="h-1 border-t-0 bg-transparent bg-gradient-to-r from-primary via-secondary to-primary" />
-
+        <Projects />
+        <hr className="h-1 border-t-0 bg-transparent bg-gradient-to-r from-primary via-secondary to-primary" />
+        <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

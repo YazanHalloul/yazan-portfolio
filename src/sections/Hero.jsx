@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { FaFacebook, FaGithub, FaLinkedin, FaLinkedinIn, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import { socialLinks } from "../utils/socialLinks";
 
 function Hero() {
   return (
@@ -34,21 +34,23 @@ function Hero() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <motion.button
+                <motion.a
+                  href="#projects"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className=" bg-secondary text-accent px-6 py-3 rounded-full"
                 >
                   View Work
-                </motion.button>
+                </motion.a>
 
-                <motion.button
+                <motion.a
+                  href="#contact"
                   whileHover={{ scale: 1.08 }}
                   whileTap={{ scale: 0.95 }}
                   className="border border-accent  text-accent px-6 py-3 rounded-full"
                 >
                   Contact Me
-                </motion.button>
+                </motion.a>
               </div>
             </div>
 
@@ -66,36 +68,24 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="text-[16px] max-w-6xl mx-auto px-6 pb-8 w-full flex flex-row gap-4 justify-center lg:justify-start text-accent ">
+        <div className="text-[16px] max-w-6xl mx-auto px-6 pb-8 pt-8 lg:pt-0 w-full flex flex-row gap-4 justify-center lg:justify-start text-accent ">
           {" "}
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className=" bg-secondary text-accent px-3 py-3 rounded-full"
-          >
-            <FaLinkedinIn/>
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[#25D366]  text-accent px-3 py-3 rounded-full"
-          >
-            <FaWhatsapp />
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[#24292e]  text-accent px-3 py-3 rounded-full"
-          >
-            <FaGithub />
-          </motion.button>
-          <motion.button
-            whileHover={{ scale: 1.08 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-[#0088cc]  text-accent px-3 py-3 rounded-full"
-          >
-            <FaTelegram />
-          </motion.button>
+          {Object.entries(socialLinks).map(([index, link]) => {
+            const Icon = link.icon;
+            return (
+              <motion.a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className={`${link.iconColor} text-accent px-3 py-3 rounded-full`}
+              >
+                <Icon />
+              </motion.a>
+            );
+          })}
         </div>
       </div>
     </section>
