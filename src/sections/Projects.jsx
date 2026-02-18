@@ -6,18 +6,17 @@ import { techIcons } from "../utils/techIcons";
 import { FaGithub } from "react-icons/fa";
 import { TbExternalLink } from "react-icons/tb";
 
-
 function Projects() {
   const linkConfig = {
-  github: {
-    icon: <FaGithub />,
-    label: "GitHub",
-  },
-  demo: {
-    icon: <TbExternalLink />,
-    label: "Video Demo",
-  },
-};
+    github: {
+      icon: <FaGithub />,
+      label: "GitHub",
+    },
+    demo: {
+      icon: <TbExternalLink />,
+      label: "Video Demo",
+    },
+  };
   return (
     <section id="projects" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
@@ -63,7 +62,9 @@ function Projects() {
                   return (
                     <div
                       key={index}
-                      className="flex items-center justify-center rounded-lg py-[3px] px-2 gap-2  text-accent border border-accent hover:text-accent  transition-colors duration-300"
+                      style={{ "--hover-color": iconColor }}
+                      className={`flex items-center justify-center rounded-lg py-[3px] px-2 gap-2  text-accent border border-accen
+                        hover:text-[var(--hover-color)] transition-colors duration-300`}
                     >
                       <span className="text-xl">
                         {Icon && <Icon color={iconColor} />}

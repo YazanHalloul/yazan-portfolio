@@ -2,7 +2,10 @@ export const projects = [
   {
     title: "E-HealthCare Mobile Application",
     description:
-      "A cross-platform mobile application that enables doctor–patient interaction, appointment scheduling, and real-time messaging. Built with Flutter for the frontend and ASP.NET Core for backend services, focusing on clean architecture and REST API integration.",
+      `A healthcare system composed of two mobile applications for doctors and patients.
+       Patients can browse medical specialties, filter doctors by criteria such as age and gender,
+       book appointments, send medical consultations, and communicate through real-time chat. 
+      Doctors can manage schedules, respond to consultations, and handle patient interactions. Built using Flutter and ASP.NET Core with REST API integration.`,
     skills: [
       { name: "Flutter" },
       { name: "Dart" },
@@ -25,11 +28,15 @@ export const projects = [
   {
     title: "Generate MCQs from Image (AI System)",
     description:
-      "An AI-powered web application that generates multiple-choice questions from images using deep learning techniques. The system integrates object detection, image captioning, NLP models, and Large Language Models (LLMs) to automate educational content creation.",
+      `An AI-driven system that generates structured multiple-choice questions from images
+       using Vision-Language Models, and Large Language Models (LLMs).
+       The system integrates prompt engineering and visual question answering,
+       and was deployed within a web interface that enables question generation, 
+       manual refinement, result storage, and interactive quiz attempts with scoring, simulating a real-world workflow.`,
     skills: [
       { name: "React"},
-      { name: "Django " },
-      { name: "Machine Learning" },
+      { name: "Django" },
+      { name: "MySQL" },
       { name: "Deep Learning" },
       { name: "LLMs" },
       { name: "Prompt Engineering" },

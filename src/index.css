@@ -17,4 +17,7 @@ html {
 section{
   scroll-margin-top: 60px;
 }
+body{
+  @apply bg-primary
+}
 

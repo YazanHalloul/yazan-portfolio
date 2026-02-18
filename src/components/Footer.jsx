@@ -4,7 +4,7 @@ function Footer() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
 
         <p>
-          © {new Date().getFullYear()} Yazan Halloul. All rights reserved.
+          © 2026 Yazan Halloul. All rights reserved.
         </p>
 
         <p className="text-accent">

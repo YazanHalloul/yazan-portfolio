@@ -70,14 +70,22 @@ function Hero() {
         </div>
         <div className="text-[16px] max-w-6xl mx-auto px-6 pb-8 pt-8 lg:pt-0 w-full flex flex-row gap-4 justify-center lg:justify-start text-accent ">
           {" "}
-          {Object.entries(socialLinks).map(([index, link]) => {
+          {Object.entries(socialLinks).map(([index, link], key) => {
             const Icon = link.icon;
+            console.log(key);
             return (
               <motion.a
                 key={index}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 25 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 2 + key,
+                  ease: "backInOut",
+                }}
+                viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className={`${link.iconColor} text-accent px-3 py-3 rounded-full`}

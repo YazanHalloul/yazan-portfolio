@@ -15,16 +15,17 @@ function Contact() {
         </h2>
 
         {/* Subtitle */}
-        <p className="text-secondary max-w-2xl mx-auto mb-12 text-base lg:text-lg leading-relaxed">
-          I'm open to new opportunities, collaborations, and innovative
-          projects. Whether it's web, mobile, or AI solutions — feel free to
-          reach out.
+        <p className="text-accent/80 max-w-2xl mx-auto mb-12 text-base lg:text-lg leading-relaxed">
+          I'm currently seeking a software engineering opportunity where I can
+          contribute to building scalable web, mobile, and AI-driven systems. If
+          you’re looking for a motivated developer with a strong technical
+          foundation, feel free to reach out.
         </p>
 
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-10">
           <motion.a
-            href="mailto:yazab.halloul.10@gmail.com"
+            href="mailto:yazan.halloul.10@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="px-6 py-3 rounded-full bg-secondary text-accent font-medium"

@@ -55,7 +55,7 @@ function About() {
           </p>
           <hr className="w-1/3 m-auto my-2" />
           <p className="leading-relaxed max-w-3xl pb-6 mx-auto ">
-            University of Higher Institute for Applied Sciences and Technology
+            Higher Institute for Applied Sciences and Technology
             (HIAST)
           </p>
         </motion.div>

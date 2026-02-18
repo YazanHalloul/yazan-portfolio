@@ -6,7 +6,7 @@ import { techIcons } from "../utils/techIcons";
 
 function Skills() {
   return (
-    <section id="tech_stack" className="py-24">
+    <section id="skills" className="py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-center">
           <motion.h2

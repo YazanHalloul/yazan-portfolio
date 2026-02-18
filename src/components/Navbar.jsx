@@ -9,7 +9,7 @@ function Navbar() {
   const links = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Tech Stack", href: "#tech_stack" },
+    { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
@@ -18,7 +18,7 @@ function Navbar() {
     const element = document.getElementById(targetId);
 
     if (element) {
-      const isAlreadyThere = Math.abs(window.scrollY - element.offsetTop) < 10;
+      const isAlreadyThere = Math.abs(window.scrollY - element.offsetTop) < 70;
 
       if (isAlreadyThere) {
         setOpen(false);

@@ -1,4 +1,5 @@
-import { DiDotnet, DiMsqlServer } from "react-icons/di";
+import { DiDotnet, DiMsqlServer, DiMysql } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
 import {
   FaReact,
   FaHtml5,
@@ -10,7 +11,6 @@ import {
 } from "react-icons/fa";
 
 import {
-  SiDotnet,
   SiTailwindcss,
   SiFlutter,
   SiDart,
@@ -23,10 +23,8 @@ import {
 
 import {
   TbApi,
-  TbBrandOpenai,
   TbBrandVscode,
   TbPencilCode,
-  TbExternalLink,
 } from "react-icons/tb";
 
 export const techIcons = {
@@ -40,6 +38,8 @@ export const techIcons = {
   "REST APIs": { icon: TbApi, color: "orange" },
   SQL: { icon: FaDatabase, color: "#B71C1C" },
   "SQL Server": { icon: DiMsqlServer, color: "#B71C1C" },
+  "MySQL": { icon: GrMysql, color: "#00758F" },
+  Django: { icon: SiDjango, color: "#092E20" },
 
   Flutter: { icon: SiFlutter, color: "#08589C" },
   Dart: { icon: SiDart, color: "#08589C" },
