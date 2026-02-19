@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="wait">P
       {loading ? (
         <SplashScreen key="splash" />
       ) : (

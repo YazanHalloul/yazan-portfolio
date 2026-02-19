@@ -21,7 +21,7 @@ export const projects = [
       },
       {
         type: "demo",
-        url: "",
+        url: "https://youtu.be/jAB7rhKwN4E",
       },
     ],
   },
