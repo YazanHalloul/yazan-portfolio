@@ -58,8 +58,8 @@ function Contact() {
 
         {/* CV Button */}
         <a
-          href="/yazan-halloul-cv.pdf"
-          target="_blank"
+          href="/yazan-halloul-cv.pdf?v=2"
+          download
           className="text-accent underline underline-offset-4
                  hover:text-accent transition-colors duration-300"
         >
