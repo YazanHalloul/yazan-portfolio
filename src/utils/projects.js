@@ -49,7 +49,7 @@ export const projects = [
       },
       {
         type: "demo",
-        url: "",
+        url: "https://youtu.be/Bfdc92U_5tc",
       },
     ],
   },
