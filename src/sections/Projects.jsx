@@ -81,7 +81,7 @@ function Projects() {
                 {project.links.map((e, index) => {
                   const config = linkConfig[e.type];
 
-                  return (
+                  return e.url ? (
                     <motion.a
                       key={index}
                       href={e.url}
@@ -97,6 +97,17 @@ function Projects() {
                         {config.label}
                       </span>
                     </motion.a>
+                  ) : (
+                    <span
+                      key={index}
+                      className={`flex items-center justify-center rounded-xl py-1 mb-2 gap-2
+                          text-accent ${config.label == "GitHub" ? "bg-[#24292e]" : "bg-secondary"} opacity-50 cursor-not-allowed`}
+                    >
+                      <span className="text-1xl">{config.icon}</span>
+                      <span className="text-sm  md:text-base">
+                        {config.label}
+                      </span>
+                    </span>
                   );
                 })}
               </div>

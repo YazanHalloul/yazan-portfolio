@@ -56,15 +56,6 @@ function Contact() {
           </motion.a>
         </div>
 
-        {/* CV Button */}
-        <a
-          href="/yazan-halloul-cv.pdf?v=2"
-          download
-          className="text-accent underline underline-offset-4
-                 hover:text-accent transition-colors duration-300"
-        >
-          Download CV
-        </a>
       </div>
     </section>
   );

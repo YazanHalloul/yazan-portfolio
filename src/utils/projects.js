@@ -53,4 +53,28 @@ export const projects = [
       },
     ],
   },
+  {
+    title: "Quiz Application",
+    description:
+      `A Flutter-based quiz application built to explore Clean Architecture and BLoC patterns.
+       Emphasizes separation of concerns, use-case driven domain logic, repository abstraction,
+       and predictable state management.`,
+    skills: [
+      { name: "Flutter" },
+      { name: "Dart" },
+      { name: "Clean Architecture" },
+      { name: "BLoC" },
+    ],
+    image: "/quiz.png",
+    links: [
+      {
+        type: "github",
+        url: "https://github.com/YazanHalloul/Quiz_app.git",
+      },
+      {
+        type: "demo",
+        url: "",
+      },
+    ],
+  },
 ];
